@@ -235,7 +235,7 @@ defineExpose({
           <Play v-else fill="currentColor" stroke-width="0" :size="24" class="ml-1" />
         </button>
 
-        <audio ref="audioRef" src="/PinkLetter/public/music.mp3" loop preload="auto"></audio>
+        <audio ref="audioRef" src="/PinkLetter/music.mp3" loop preload="auto"></audio>
       </div>
 
       <p
