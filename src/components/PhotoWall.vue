@@ -80,7 +80,7 @@ const rows = [0, 1]
             class="bg-white p-3 pb-12 shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 border border-slate-100 rounded w-44 md:w-56">
             <div
               class="w-full aspect-square bg-slate-50 flex flex-col items-center justify-center overflow-hidden border border-slate-200 relative">
-              <img :src="photo.src" :alt="photo.label"
+              <img :src="photo?.src" :alt="photo?.label"
                 class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:opacity-100 transition-opacity" />
               <div
                 class="absolute inset-0 bg-pink-300/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
@@ -88,7 +88,7 @@ const rows = [0, 1]
             </div>
             <p
               class="font-handwriting text-center text-slate-500 text-lg md:text-xl absolute bottom-3 w-full left-0 tracking-widest bg-white/50 backdrop-blur-sm">
-              {{ photo.label }}
+              {{ photo?.label }}
             </p>
           </div>
         </div>
